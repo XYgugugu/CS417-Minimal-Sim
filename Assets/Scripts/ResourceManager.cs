@@ -17,7 +17,8 @@ public class ResourceManager : MonoBehaviour
     [SerializeField] private string resource_name_2 = "Resource 2";
     
     [SerializeField] private float delta_source_per_sec_1 = 1.0f;
-    [SerializeField] private float delta_source_per_sec_2 = 2.0f;
+    [SerializeField] private float delta_source_per_sec_2 = 0.0f;
+    [SerializeField] private float unlockRequirementForResource2 = 500f;
 
     private float resource_value_1 = 0.0f;
     private float resource_value_2 = 0.0f;
@@ -27,6 +28,7 @@ public class ResourceManager : MonoBehaviour
     void Start()
     {
         resourceCoroutine = StartCoroutine(UpdateResourceRoutine());
+        resource_2.enabled = false;
     }
 
     private IEnumerator UpdateResourceRoutine()
@@ -39,6 +41,18 @@ public class ResourceManager : MonoBehaviour
             resource_2.text = $"{resource_name_2} ({delta_source_per_sec_2}/s): {resource_value_2}";
             yield return new WaitForSeconds(1f);
         }
+    }
+
+    public void UnlockResource2()
+    {
+        if (unlockRequirementForResource2 < 0f) return;
+        if (resource_value_1 < unlockRequirementForResource2) return;
+
+        resource_value_1 -= unlockRequirementForResource2;
+        resource_1.text = $"{resource_name_1} ({delta_source_per_sec_1}/s): {resource_value_1}";
+        unlockRequirementForResource2 = -1f;
+        resource_2.enabled = true;
+        delta_source_per_sec_2 = 1f;
     }
 
     public void ChangeResourceRate1(float delta, ChangeMode mode)
