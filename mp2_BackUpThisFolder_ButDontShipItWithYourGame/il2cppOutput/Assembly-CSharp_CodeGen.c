@@ -12,6 +12,7 @@ extern void CandySim_UpdateButtonStyle_m753660AC8D1D79FA6C131C3C2B9C79793D1E6E21
 extern void CandySim_BuyGenerator_mAB76C193FC950913DC84959F359D6D8AFFC33D0D (void);
 extern void CandySim_BuyPowerUp_m1D387A5928108EE1183FADEBC60395BE99CE173A (void);
 extern void CandySim_UnlockLollipops_m0ED97EBF52DF8F5055081550805E350A216BCCB4 (void);
+extern void CandySim_ClickLollipop_m1772A56993E0202A3F7305359F1AB78F0CDCD749 (void);
 extern void CandySim__ctor_mAA1F61B0CA5E2B3D50D9CB20BA941FC5C7012DC8 (void);
 extern void Exchanger_SampleExchangeType1_100Cost_HalfRate_m4B8A748A938C459A00CB7750AE25C58C8BFD5C12 (void);
 extern void Exchanger_Exchange_mDCA449D64D14F875BCBC785C953C2A7B0B9108CC (void);
@@ -38,13 +39,14 @@ extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
 extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
-static Il2CppMethodPointer s_methodPointers[31] = 
+static Il2CppMethodPointer s_methodPointers[32] = 
 {
 	CandySim_Update_m73AC186CDFD8433791718F332770CA378E78A1D6,
 	CandySim_UpdateButtonStyle_m753660AC8D1D79FA6C131C3C2B9C79793D1E6E21,
 	CandySim_BuyGenerator_mAB76C193FC950913DC84959F359D6D8AFFC33D0D,
 	CandySim_BuyPowerUp_m1D387A5928108EE1183FADEBC60395BE99CE173A,
 	CandySim_UnlockLollipops_m0ED97EBF52DF8F5055081550805E350A216BCCB4,
+	CandySim_ClickLollipop_m1772A56993E0202A3F7305359F1AB78F0CDCD749,
 	CandySim__ctor_mAA1F61B0CA5E2B3D50D9CB20BA941FC5C7012DC8,
 	Exchanger_SampleExchangeType1_100Cost_HalfRate_m4B8A748A938C459A00CB7750AE25C58C8BFD5C12,
 	Exchanger_Exchange_mDCA449D64D14F875BCBC785C953C2A7B0B9108CC,
@@ -72,10 +74,11 @@ static Il2CppMethodPointer s_methodPointers[31] =
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
 };
-static const int32_t s_InvokerIndices[31] = 
+static const int32_t s_InvokerIndices[32] = 
 {
 	15001,
 	5727,
+	15001,
 	15001,
 	15001,
 	15001,
@@ -110,7 +113,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	31,
+	32,
 	s_methodPointers,
 	0,
 	NULL,

@@ -94,4 +94,9 @@ public class CandySim : MonoBehaviour
             Debug.Log("Lollipop Wing Unlocked!");
         }
     }
+
+	public void ClickLollipop() {
+		pops += 1;
+		Debug.Log("Manual Lollipop Created!");
+	}
 }
