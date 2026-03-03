@@ -1,0 +1,129 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void CandySim_Update_m73AC186CDFD8433791718F332770CA378E78A1D6 (void);
+extern void CandySim_UpdateButtonStyle_m753660AC8D1D79FA6C131C3C2B9C79793D1E6E21 (void);
+extern void CandySim_BuyGenerator_mAB76C193FC950913DC84959F359D6D8AFFC33D0D (void);
+extern void CandySim_BuyPowerUp_m1D387A5928108EE1183FADEBC60395BE99CE173A (void);
+extern void CandySim_UnlockLollipops_m0ED97EBF52DF8F5055081550805E350A216BCCB4 (void);
+extern void CandySim__ctor_mAA1F61B0CA5E2B3D50D9CB20BA941FC5C7012DC8 (void);
+extern void Exchanger_SampleExchangeType1_100Cost_HalfRate_m4B8A748A938C459A00CB7750AE25C58C8BFD5C12 (void);
+extern void Exchanger_Exchange_mDCA449D64D14F875BCBC785C953C2A7B0B9108CC (void);
+extern void Exchanger__ctor_m735B59391ED9535D479362D1477CB80BCA370F17 (void);
+extern void Generator_SampleGenerateType1_10Cost_2ExtraRate_m2EA3657308BFB47EC296D75714BBB94D4E491473 (void);
+extern void Generator_Generate_mE57AA14BD3071CF2BE2ED1884F0821DADE647113 (void);
+extern void Generator__ctor_mD99305AFF5A80101A94999DDB2E071266408C710 (void);
+extern void ResourceManager_Start_mDC8053F06C65AEF06644C0C862865B1BB6C1E75E (void);
+extern void ResourceManager_UpdateResourceRoutine_mA2C2161CE7F0380F8FB1431AE0376B6CFC6F4282 (void);
+extern void ResourceManager_UnlockResource2_m2F394E84C83F5F0F31F67BE0A35E7A4F586716CE (void);
+extern void ResourceManager_ChangeResourceRate1_mE15B37796C7BF798BE6F42434282735EB5F527F3 (void);
+extern void ResourceManager_ChangeResourceRate2_m4F1BCCB2D343EC09FB2D3B79F7B4897111FC5F5A (void);
+extern void ResourceManager_ChangeResource1_mFF8A4514B65C76731A3B1633A7393C0986111474 (void);
+extern void ResourceManager_ChangeResource2_mDBE9E16AA489BEC8776BEAB6259CF4205FFCB1E7 (void);
+extern void ResourceManager_Update_mBC2AF2BDAAC8AA27734213CF60B8DA45C6810F43 (void);
+extern void ResourceManager__ctor_m0895A816FF3A70D6BD14077742487BAEF05CC9A3 (void);
+extern void U3CUpdateResourceRoutineU3Ed__12__ctor_m77A9B89D881F9575C2DBE769211348855A38AFE8 (void);
+extern void U3CUpdateResourceRoutineU3Ed__12_System_IDisposable_Dispose_m0C972C2F5A2AFD61B8EE2E81CE50623DF15C7D29 (void);
+extern void U3CUpdateResourceRoutineU3Ed__12_MoveNext_mFC37271DCA90680AAA670FAD21667A716075ABDD (void);
+extern void U3CUpdateResourceRoutineU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5BD7933CA8AA39CBB7B5FA65F8B5395C59B1ED02 (void);
+extern void U3CUpdateResourceRoutineU3Ed__12_System_Collections_IEnumerator_Reset_mB894AFE441B15826EAD10A0B43444B694C8C4EF7 (void);
+extern void U3CUpdateResourceRoutineU3Ed__12_System_Collections_IEnumerator_get_Current_mCA400B5E85721279969F5E3CD2F97E3D9674FB52 (void);
+extern void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (void);
+extern void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (void);
+static Il2CppMethodPointer s_methodPointers[31] = 
+{
+	CandySim_Update_m73AC186CDFD8433791718F332770CA378E78A1D6,
+	CandySim_UpdateButtonStyle_m753660AC8D1D79FA6C131C3C2B9C79793D1E6E21,
+	CandySim_BuyGenerator_mAB76C193FC950913DC84959F359D6D8AFFC33D0D,
+	CandySim_BuyPowerUp_m1D387A5928108EE1183FADEBC60395BE99CE173A,
+	CandySim_UnlockLollipops_m0ED97EBF52DF8F5055081550805E350A216BCCB4,
+	CandySim__ctor_mAA1F61B0CA5E2B3D50D9CB20BA941FC5C7012DC8,
+	Exchanger_SampleExchangeType1_100Cost_HalfRate_m4B8A748A938C459A00CB7750AE25C58C8BFD5C12,
+	Exchanger_Exchange_mDCA449D64D14F875BCBC785C953C2A7B0B9108CC,
+	Exchanger__ctor_m735B59391ED9535D479362D1477CB80BCA370F17,
+	Generator_SampleGenerateType1_10Cost_2ExtraRate_m2EA3657308BFB47EC296D75714BBB94D4E491473,
+	Generator_Generate_mE57AA14BD3071CF2BE2ED1884F0821DADE647113,
+	Generator__ctor_mD99305AFF5A80101A94999DDB2E071266408C710,
+	ResourceManager_Start_mDC8053F06C65AEF06644C0C862865B1BB6C1E75E,
+	ResourceManager_UpdateResourceRoutine_mA2C2161CE7F0380F8FB1431AE0376B6CFC6F4282,
+	ResourceManager_UnlockResource2_m2F394E84C83F5F0F31F67BE0A35E7A4F586716CE,
+	ResourceManager_ChangeResourceRate1_mE15B37796C7BF798BE6F42434282735EB5F527F3,
+	ResourceManager_ChangeResourceRate2_m4F1BCCB2D343EC09FB2D3B79F7B4897111FC5F5A,
+	ResourceManager_ChangeResource1_mFF8A4514B65C76731A3B1633A7393C0986111474,
+	ResourceManager_ChangeResource2_mDBE9E16AA489BEC8776BEAB6259CF4205FFCB1E7,
+	ResourceManager_Update_mBC2AF2BDAAC8AA27734213CF60B8DA45C6810F43,
+	ResourceManager__ctor_m0895A816FF3A70D6BD14077742487BAEF05CC9A3,
+	U3CUpdateResourceRoutineU3Ed__12__ctor_m77A9B89D881F9575C2DBE769211348855A38AFE8,
+	U3CUpdateResourceRoutineU3Ed__12_System_IDisposable_Dispose_m0C972C2F5A2AFD61B8EE2E81CE50623DF15C7D29,
+	U3CUpdateResourceRoutineU3Ed__12_MoveNext_mFC37271DCA90680AAA670FAD21667A716075ABDD,
+	U3CUpdateResourceRoutineU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5BD7933CA8AA39CBB7B5FA65F8B5395C59B1ED02,
+	U3CUpdateResourceRoutineU3Ed__12_System_Collections_IEnumerator_Reset_mB894AFE441B15826EAD10A0B43444B694C8C4EF7,
+	U3CUpdateResourceRoutineU3Ed__12_System_Collections_IEnumerator_get_Current_mCA400B5E85721279969F5E3CD2F97E3D9674FB52,
+	Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6,
+	Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
+};
+static const int32_t s_InvokerIndices[31] = 
+{
+	15001,
+	5727,
+	15001,
+	15001,
+	15001,
+	15001,
+	15001,
+	2442,
+	15001,
+	15001,
+	2442,
+	15001,
+	15001,
+	14789,
+	15001,
+	5874,
+	5874,
+	8126,
+	8126,
+	15001,
+	15001,
+	11313,
+	15001,
+	14587,
+	14789,
+	15001,
+	14789,
+	15001,
+	15001,
+	26050,
+	15001,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
+{
+	"Assembly-CSharp.dll",
+	31,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};
