@@ -15,6 +15,7 @@ public class CandySim : MonoBehaviour
     public float popRate = 0;
     public TextMeshProUGUI popText;
     public GameObject lollipopStation;
+	public Button popClickButton;
 
     [Header("Planting Settings")]
     public GameObject pressPrefab;
@@ -31,8 +32,11 @@ public class CandySim : MonoBehaviour
     public float unlockCost = 50;
     public float multiplier = 1.0f;
 
-    void Update()
-    {
+	void Start() {
+        if (popClickButton != null) popClickButton.gameObject.SetActive(false);
+    }
+
+    void Update() {
         beans += (beanRate * multiplier) * Time.deltaTime;
         pops += popRate * Time.deltaTime;
 
@@ -71,7 +75,7 @@ public class CandySim : MonoBehaviour
             Vector3 randomPos = spawnArea.position + new Vector3(Random.Range(-0.2f, 0.2f), 0, Random.Range(-0.2f, 0.2f));
             Instantiate(pressPrefab, randomPos, Quaternion.identity);
 
-            generatorCost *= 1.2f;
+            generatorCost *= 1.5f;
             Debug.Log("Generator Planted!");
         }
     }
@@ -89,6 +93,8 @@ public class CandySim : MonoBehaviour
             beans -= unlockCost;
             lollipopStation.SetActive(true);
             popRate = 0.5f;
+
+			if (popClickButton != null) popClickButton.gameObject.SetActive(true);
             
             unlockButton.gameObject.SetActive(false); 
             Debug.Log("Lollipop Wing Unlocked!");
@@ -96,7 +102,7 @@ public class CandySim : MonoBehaviour
     }
 
 	public void ClickLollipop() {
-		pops += 1;
+		pops += 3;
 		Debug.Log("Manual Lollipop Created!");
 	}
 }

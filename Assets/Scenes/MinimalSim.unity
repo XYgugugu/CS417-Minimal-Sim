@@ -351,7 +351,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 50577235}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -361,7 +361,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19, y: -425}
+  m_AnchoredPosition: {x: -160.00003, y: -424.9997}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &50577237
@@ -703,7 +703,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20, y: -427}
+  m_AnchoredPosition: {x: 164, y: -427}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &108891228
@@ -756,7 +756,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1099964579}
         m_TargetAssemblyTypeName: CandySim, Assembly-CSharp
-        m_MethodName: ClickLollipop
+        m_MethodName: UnlockLollipops
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2788,6 +2788,7 @@ MonoBehaviour:
   popRate: 0
   popText: {fileID: 717501202}
   lollipopStation: {fileID: 2098296977}
+  popClickButton: {fileID: 50577239}
   pressPrefab: {fileID: 3685989756420556488, guid: 52d20ae7a2d3b56429de9355dfcd1e59, type: 3}
   spawnArea: {fileID: 756928696}
   buyGenButton: {fileID: 1712091088}

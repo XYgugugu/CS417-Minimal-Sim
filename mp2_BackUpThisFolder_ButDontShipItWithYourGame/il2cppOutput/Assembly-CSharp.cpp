@@ -1115,6 +1115,7 @@ struct CandySim_t86FC11B5E602AF74BD5CC276E6323C6F9168F6F0  : public MonoBehaviou
 	float ___popRate;
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___popText;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___lollipopStation;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___popClickButton;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___pressPrefab;
 	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___spawnArea;
 	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___buyGenButton;
@@ -1614,14 +1615,15 @@ struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArr
 
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m249A6BA4F2F19C2D3CE217D4D31847DF0EF03EFE_gshared (RuntimeObject* ___0_original, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___2_rotation, const RuntimeMethod* method) ;
 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline (float ___0_f, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_UpdateButtonStyle_m753660AC8D1D79FA6C131C3C2B9C79793D1E6E21 (CandySim_t86FC11B5E602AF74BD5CC276E6323C6F9168F6F0* __this, Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___0_btn, bool ___1_canAfford, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
@@ -1637,7 +1639,6 @@ inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Object_Instantiate_
 	return ((  GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974, const RuntimeMethod*))Object_Instantiate_TisRuntimeObject_m249A6BA4F2F19C2D3CE217D4D31847DF0EF03EFE_gshared)(___0_original, ___1_position, ___2_rotation, method);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Exchanger_Exchange_mDCA449D64D14F875BCBC785C953C2A7B0B9108CC (Exchanger_t777A28087F475FEC46E515C18B3B9045E6D07140* __this, int32_t ___0_source_type, float ___1_cost, float ___2_scale, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ResourceManager_ChangeResource1_mFF8A4514B65C76731A3B1633A7393C0986111474 (ResourceManager_t3C786E6B9CB06BD30723E3099A98FEF2F853355E* __this, float ___0_delta, const RuntimeMethod* method) ;
@@ -1670,6 +1671,42 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9C
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // Method Definition Index: 79690
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_Start_mF046BFE04E61C967C532C57E9A2269CB9BD70208 (CandySim_t86FC11B5E602AF74BD5CC276E6323C6F9168F6F0* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:36>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = __this->___popClickButton;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:36>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_2 = __this->___popClickButton;
+		NullCheck(L_2);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_2, NULL);
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
+	}
+
+IL_001f:
+	{
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:37>
+		return;
+	}
+}
+// Method Definition Index: 79691
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_Update_m73AC186CDFD8433791718F332770CA378E78A1D6 (CandySim_t86FC11B5E602AF74BD5CC276E6323C6F9168F6F0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1684,20 +1721,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_Update_m73AC186CDFD8433791718F3
 	int32_t V_0 = 0;
 	float V_1 = 0.0f;
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:36>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:40>
 		float L_0 = __this->___beans;
 		float L_1 = __this->___beanRate;
 		float L_2 = __this->___multiplier;
 		float L_3;
 		L_3 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___beans = ((float)il2cpp_codegen_add(L_0, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_1, L_2)), L_3))));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:37>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:41>
 		float L_4 = __this->___pops;
 		float L_5 = __this->___popRate;
 		float L_6;
 		L_6 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___pops = ((float)il2cpp_codegen_add(L_4, ((float)il2cpp_codegen_multiply(L_5, L_6))));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:39>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:43>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_7 = __this->___beanText;
 		float L_8 = __this->___beans;
 		int32_t L_9;
@@ -1709,7 +1746,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_Update_m73AC186CDFD8433791718F3
 		L_11 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralF4768B9973E0CA03771A4B02B0174BB3C0AE7082, L_10, NULL);
 		NullCheck(L_7);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_7, L_11);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:41>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:45>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___lollipopStation;
 		NullCheck(L_12);
 		bool L_13;
@@ -1720,7 +1757,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_Update_m73AC186CDFD8433791718F3
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:42>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:46>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_14 = __this->___popText;
 		float L_15 = __this->___pops;
 		int32_t L_16;
@@ -1737,7 +1774,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_Update_m73AC186CDFD8433791718F3
 
 IL_0098:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:44>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:48>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_19 = __this->___popText;
 		NullCheck(L_19);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_19, _stringLiteralF475C40B66CDDEC9B385F4B9DDBBD87798470EA5);
@@ -1745,17 +1782,17 @@ IL_0098:
 
 IL_00a8:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:47>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:51>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_20 = __this->___buyGenButton;
 		float L_21 = __this->___beans;
 		float L_22 = __this->___generatorCost;
 		CandySim_UpdateButtonStyle_m753660AC8D1D79FA6C131C3C2B9C79793D1E6E21(__this, L_20, (bool)((((int32_t)((!(((float)L_21) >= ((float)L_22)))? 1 : 0)) == ((int32_t)0))? 1 : 0), NULL);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:48>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:52>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_23 = __this->___buyPowerUpButton;
 		float L_24 = __this->___beans;
 		float L_25 = __this->___powerUpCost;
 		CandySim_UpdateButtonStyle_m753660AC8D1D79FA6C131C3C2B9C79793D1E6E21(__this, L_23, (bool)((((int32_t)((!(((float)L_24) >= ((float)L_25)))? 1 : 0)) == ((int32_t)0))? 1 : 0), NULL);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:50>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:54>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_26 = __this->___unlockButton;
 		NullCheck(L_26);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27;
@@ -1769,7 +1806,7 @@ IL_00a8:
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:51>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:55>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_29 = __this->___unlockButton;
 		float L_30 = __this->___beans;
 		float L_31 = __this->___unlockCost;
@@ -1778,7 +1815,7 @@ IL_00a8:
 
 IL_0111:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:54>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:58>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_32 = __this->___beanJarVisual;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_33;
@@ -1789,12 +1826,12 @@ IL_0111:
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:55>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:59>
 		float L_34 = __this->___beans;
 		float L_35;
 		L_35 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)(L_34/(100.0f))), (0.100000001f), (2.0f), NULL);
 		V_1 = L_35;
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:56>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:60>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36 = __this->___beanJarVisual;
 		float L_37 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
@@ -1806,11 +1843,11 @@ IL_0111:
 
 IL_0156:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:58>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:62>
 		return;
 	}
 }
-// Method Definition Index: 79691
+// Method Definition Index: 79692
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_UpdateButtonStyle_m753660AC8D1D79FA6C131C3C2B9C79793D1E6E21 (CandySim_t86FC11B5E602AF74BD5CC276E6323C6F9168F6F0* __this, Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___0_btn, bool ___1_canAfford, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1825,7 +1862,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_UpdateButtonStyle_m753660AC8D1D
 	memset((&G_B4_0), 0, sizeof(G_B4_0));
 	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* G_B4_1 = NULL;
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:61>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:65>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = ___0_btn;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -1836,7 +1873,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_UpdateButtonStyle_m753660AC8D1D
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:62>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:66>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_2 = ___0_btn;
 		NullCheck(L_2);
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_3;
@@ -1873,11 +1910,11 @@ IL_001e:
 
 IL_0023:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:64>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:68>
 		return;
 	}
 }
-// Method Definition Index: 79692
+// Method Definition Index: 79693
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_BuyGenerator_mAB76C193FC950913DC84959F359D6D8AFFC33D0D (CandySim_t86FC11B5E602AF74BD5CC276E6323C6F9168F6F0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1892,7 +1929,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_BuyGenerator_mAB76C193FC950913D
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:67>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:71>
 		float L_0 = __this->___beans;
 		float L_1 = __this->___generatorCost;
 		if ((!(((float)L_0) >= ((float)L_1))))
@@ -1901,14 +1938,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_BuyGenerator_mAB76C193FC950913D
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:68>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:72>
 		float L_2 = __this->___beans;
 		float L_3 = __this->___generatorCost;
 		__this->___beans = ((float)il2cpp_codegen_subtract(L_2, L_3));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:69>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:73>
 		float L_4 = __this->___beanRate;
 		__this->___beanRate = ((float)il2cpp_codegen_add(L_4, (2.0f)));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:71>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:75>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___spawnArea;
 		NullCheck(L_5);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
@@ -1923,7 +1960,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_BuyGenerator_mAB76C193FC950913D
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
 		L_10 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_6, L_9, NULL);
 		V_0 = L_10;
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:72>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:76>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___pressPrefab;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_13;
@@ -1931,21 +1968,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_BuyGenerator_mAB76C193FC950913D
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14;
 		L_14 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_11, L_12, L_13, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:74>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:78>
 		float L_15 = __this->___generatorCost;
-		__this->___generatorCost = ((float)il2cpp_codegen_multiply(L_15, (1.20000005f)));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:75>
+		__this->___generatorCost = ((float)il2cpp_codegen_multiply(L_15, (1.5f)));
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:79>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral02FE0A3A19CBE5807910E9E65292468E7B5A2E19, NULL);
 	}
 
 IL_009d:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:77>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:81>
 		return;
 	}
 }
-// Method Definition Index: 79693
+// Method Definition Index: 79694
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_BuyPowerUp_m1D387A5928108EE1183FADEBC60395BE99CE173A (CandySim_t86FC11B5E602AF74BD5CC276E6323C6F9168F6F0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1956,7 +1993,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_BuyPowerUp_m1D387A5928108EE1183
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:80>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:84>
 		float L_0 = __this->___beans;
 		float L_1 = __this->___powerUpCost;
 		if ((!(((float)L_0) >= ((float)L_1))))
@@ -1965,73 +2002,96 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_BuyPowerUp_m1D387A5928108EE1183
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:81>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:85>
 		float L_2 = __this->___beans;
 		float L_3 = __this->___powerUpCost;
 		__this->___beans = ((float)il2cpp_codegen_subtract(L_2, L_3));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:82>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:86>
 		float L_4 = __this->___multiplier;
 		__this->___multiplier = ((float)il2cpp_codegen_multiply(L_4, (1.5f)));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:83>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:87>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral15011946D828CA594E1EDEC2A9E8D59FA3DE3010, NULL);
 	}
 
 IL_003d:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:85>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:89>
 		return;
 	}
 }
-// Method Definition Index: 79694
+// Method Definition Index: 79695
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_UnlockLollipops_m0ED97EBF52DF8F5055081550805E350A216BCCB4 (CandySim_t86FC11B5E602AF74BD5CC276E6323C6F9168F6F0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral30E75FC32291C6198383F852841C9D3ED39143B1);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:88>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:92>
 		float L_0 = __this->___beans;
 		float L_1 = __this->___unlockCost;
 		if ((!(((float)L_0) >= ((float)L_1))))
 		{
-			goto IL_0053;
+			goto IL_0072;
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:89>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:93>
 		float L_2 = __this->___beans;
 		float L_3 = __this->___unlockCost;
 		__this->___beans = ((float)il2cpp_codegen_subtract(L_2, L_3));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:90>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:94>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___lollipopStation;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:91>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:95>
 		__this->___popRate = (0.5f);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:93>
-		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_5 = __this->___unlockButton;
-		NullCheck(L_5);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
-		L_6 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_5, NULL);
-		NullCheck(L_6);
-		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:94>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:97>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_5 = __this->___popClickButton;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_6)
+		{
+			goto IL_0057;
+		}
+	}
+	{
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:97>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_7 = __this->___popClickButton;
+		NullCheck(L_7);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8;
+		L_8 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_7, NULL);
+		NullCheck(L_8);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_8, (bool)1, NULL);
+	}
+
+IL_0057:
+	{
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:99>
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_9 = __this->___unlockButton;
+		NullCheck(L_9);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10;
+		L_10 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_9, NULL);
+		NullCheck(L_10);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)0, NULL);
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:100>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral30E75FC32291C6198383F852841C9D3ED39143B1, NULL);
 	}
 
-IL_0053:
+IL_0072:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:96>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:102>
 		return;
 	}
 }
-// Method Definition Index: 79695
+// Method Definition Index: 79696
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_ClickLollipop_m1772A56993E0202A3F7305359F1AB78F0CDCD749 (CandySim_t86FC11B5E602AF74BD5CC276E6323C6F9168F6F0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2042,29 +2102,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_ClickLollipop_m1772A56993E0202A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:99>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:105>
 		float L_0 = __this->___pops;
-		__this->___pops = ((float)il2cpp_codegen_add(L_0, (1.0f)));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:100>
+		__this->___pops = ((float)il2cpp_codegen_add(L_0, (5.0f)));
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:106>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralAC54987B3AE4E739F983AFC477922E0E694592D0, NULL);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:101>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:107>
 		return;
 	}
 }
-// Method Definition Index: 79696
+// Method Definition Index: 79697
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim__ctor_mAA1F61B0CA5E2B3D50D9CB20BA941FC5C7012DC8 (CandySim_t86FC11B5E602AF74BD5CC276E6323C6F9168F6F0* __this, const RuntimeMethod* method) 
 {
 	{
 		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:9>
 		__this->___beanRate = (1.0f);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:29>
-		__this->___generatorCost = (10.0f);
 		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:30>
-		__this->___powerUpCost = (20.0f);
+		__this->___generatorCost = (10.0f);
 		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:31>
-		__this->___unlockCost = (50.0f);
+		__this->___powerUpCost = (20.0f);
 		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:32>
+		__this->___unlockCost = (50.0f);
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:33>
 		__this->___multiplier = (1.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
@@ -2078,7 +2138,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim__ctor_mAA1F61B0CA5E2B3D50D9CB20
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79697
+// Method Definition Index: 79698
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Exchanger_SampleExchangeType1_100Cost_HalfRate_m4B8A748A938C459A00CB7750AE25C58C8BFD5C12 (Exchanger_t777A28087F475FEC46E515C18B3B9045E6D07140* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2088,7 +2148,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Exchanger_SampleExchangeType1_100Cost_Ha
 		return;
 	}
 }
-// Method Definition Index: 79698
+// Method Definition Index: 79699
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Exchanger_Exchange_mDCA449D64D14F875BCBC785C953C2A7B0B9108CC (Exchanger_t777A28087F475FEC46E515C18B3B9045E6D07140* __this, int32_t ___0_source_type, float ___1_cost, float ___2_scale, const RuntimeMethod* method) 
 {
 	{
@@ -2166,7 +2226,7 @@ IL_0042:
 		return;
 	}
 }
-// Method Definition Index: 79699
+// Method Definition Index: 79700
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Exchanger__ctor_m735B59391ED9535D479362D1477CB80BCA370F17 (Exchanger_t777A28087F475FEC46E515C18B3B9045E6D07140* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2182,7 +2242,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Exchanger__ctor_m735B59391ED9535D479362D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79700
+// Method Definition Index: 79701
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Generator_SampleGenerateType1_10Cost_2ExtraRate_m2EA3657308BFB47EC296D75714BBB94D4E491473 (Generator_t112AB8D9DCD0A67CBB7ACCE5D7A66BB0F478923F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2192,7 +2252,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Generator_SampleGenerateType1_10Cost_2Ex
 		return;
 	}
 }
-// Method Definition Index: 79701
+// Method Definition Index: 79702
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Generator_Generate_mE57AA14BD3071CF2BE2ED1884F0821DADE647113 (Generator_t112AB8D9DCD0A67CBB7ACCE5D7A66BB0F478923F* __this, int32_t ___0_source_type, float ___1_cost, float ___2_delta_rate, const RuntimeMethod* method) 
 {
 	{
@@ -2270,7 +2330,7 @@ IL_0042:
 		return;
 	}
 }
-// Method Definition Index: 79702
+// Method Definition Index: 79703
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Generator__ctor_mD99305AFF5A80101A94999DDB2E071266408C710 (Generator_t112AB8D9DCD0A67CBB7ACCE5D7A66BB0F478923F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2286,7 +2346,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Generator__ctor_mD99305AFF5A80101A94999D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79703
+// Method Definition Index: 79704
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResourceManager_Start_mDC8053F06C65AEF06644C0C862865B1BB6C1E75E (ResourceManager_t3C786E6B9CB06BD30723E3099A98FEF2F853355E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2305,7 +2365,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResourceManager_Start_mDC8053F06C65AEF06
 		return;
 	}
 }
-// Method Definition Index: 79704
+// Method Definition Index: 79705
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ResourceManager_UpdateResourceRoutine_mA2C2161CE7F0380F8FB1431AE0376B6CFC6F4282 (ResourceManager_t3C786E6B9CB06BD30723E3099A98FEF2F853355E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2324,7 +2384,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ResourceManager_UpdateResource
 		return L_1;
 	}
 }
-// Method Definition Index: 79705
+// Method Definition Index: 79706
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResourceManager_UnlockResource2_m2F394E84C83F5F0F31F67BE0A35E7A4F586716CE (ResourceManager_t3C786E6B9CB06BD30723E3099A98FEF2F853355E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2392,7 +2452,7 @@ IL_001d:
 		return;
 	}
 }
-// Method Definition Index: 79706
+// Method Definition Index: 79707
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResourceManager_ChangeResourceRate1_mE15B37796C7BF798BE6F42434282735EB5F527F3 (ResourceManager_t3C786E6B9CB06BD30723E3099A98FEF2F853355E* __this, float ___0_delta, int32_t ___1_mode, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2476,7 +2536,7 @@ IL_0028:
 		return;
 	}
 }
-// Method Definition Index: 79707
+// Method Definition Index: 79708
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResourceManager_ChangeResourceRate2_m4F1BCCB2D343EC09FB2D3B79F7B4897111FC5F5A (ResourceManager_t3C786E6B9CB06BD30723E3099A98FEF2F853355E* __this, float ___0_delta, int32_t ___1_mode, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2560,7 +2620,7 @@ IL_0028:
 		return;
 	}
 }
-// Method Definition Index: 79708
+// Method Definition Index: 79709
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ResourceManager_ChangeResource1_mFF8A4514B65C76731A3B1633A7393C0986111474 (ResourceManager_t3C786E6B9CB06BD30723E3099A98FEF2F853355E* __this, float ___0_delta, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2606,7 +2666,7 @@ IL_0011:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 79709
+// Method Definition Index: 79710
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ResourceManager_ChangeResource2_mDBE9E16AA489BEC8776BEAB6259CF4205FFCB1E7 (ResourceManager_t3C786E6B9CB06BD30723E3099A98FEF2F853355E* __this, float ___0_delta, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2652,7 +2712,7 @@ IL_0011:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 79710
+// Method Definition Index: 79711
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResourceManager_Update_mBC2AF2BDAAC8AA27734213CF60B8DA45C6810F43 (ResourceManager_t3C786E6B9CB06BD30723E3099A98FEF2F853355E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2660,7 +2720,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResourceManager_Update_mBC2AF2BDAAC8AA27
 		return;
 	}
 }
-// Method Definition Index: 79711
+// Method Definition Index: 79712
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResourceManager__ctor_m0895A816FF3A70D6BD14077742487BAEF05CC9A3 (ResourceManager_t3C786E6B9CB06BD30723E3099A98FEF2F853355E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2701,7 +2761,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResourceManager__ctor_m0895A816FF3A70D6B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79712
+// Method Definition Index: 79713
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CUpdateResourceRoutineU3Ed__12__ctor_m77A9B89D881F9575C2DBE769211348855A38AFE8 (U3CUpdateResourceRoutineU3Ed__12_tD2D94B0071D06AD0352A3648F01349685953CFEE* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
@@ -2711,14 +2771,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CUpdateResourceRoutineU3Ed__12__ctor_m
 		return;
 	}
 }
-// Method Definition Index: 79713
+// Method Definition Index: 79714
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CUpdateResourceRoutineU3Ed__12_System_IDisposable_Dispose_m0C972C2F5A2AFD61B8EE2E81CE50623DF15C7D29 (U3CUpdateResourceRoutineU3Ed__12_tD2D94B0071D06AD0352A3648F01349685953CFEE* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
-// Method Definition Index: 79714
+// Method Definition Index: 79715
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CUpdateResourceRoutineU3Ed__12_MoveNext_mFC37271DCA90680AAA670FAD21667A716075ABDD (U3CUpdateResourceRoutineU3Ed__12_tD2D94B0071D06AD0352A3648F01349685953CFEE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2837,7 +2897,7 @@ IL_00c2:
 		goto IL_0021;
 	}
 }
-// Method Definition Index: 79715
+// Method Definition Index: 79716
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CUpdateResourceRoutineU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m5BD7933CA8AA39CBB7B5FA65F8B5395C59B1ED02 (U3CUpdateResourceRoutineU3Ed__12_tD2D94B0071D06AD0352A3648F01349685953CFEE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2845,7 +2905,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CUpdateResourceRoutineU3Ed__
 		return L_0;
 	}
 }
-// Method Definition Index: 79716
+// Method Definition Index: 79717
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CUpdateResourceRoutineU3Ed__12_System_Collections_IEnumerator_Reset_mB894AFE441B15826EAD10A0B43444B694C8C4EF7 (U3CUpdateResourceRoutineU3Ed__12_tD2D94B0071D06AD0352A3648F01349685953CFEE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2854,7 +2914,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CUpdateResourceRoutineU3Ed__12_System_
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CUpdateResourceRoutineU3Ed__12_System_Collections_IEnumerator_Reset_mB894AFE441B15826EAD10A0B43444B694C8C4EF7_RuntimeMethod_var)));
 	}
 }
-// Method Definition Index: 79717
+// Method Definition Index: 79718
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CUpdateResourceRoutineU3Ed__12_System_Collections_IEnumerator_get_Current_mCA400B5E85721279969F5E3CD2F97E3D9674FB52 (U3CUpdateResourceRoutineU3Ed__12_tD2D94B0071D06AD0352A3648F01349685953CFEE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2870,7 +2930,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CUpdateResourceRoutineU3Ed__
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79718
+// Method Definition Index: 79719
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A9034AA91EA8C39C6 (Readme_tE17B99201D0F52BD5727638AD3F41072A65B3BBB* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2886,7 +2946,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Readme__ctor_m69C325C4C171DCB0312B646A90
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79719
+// Method Definition Index: 79720
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5DB332E46055399B (Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401* __this, const RuntimeMethod* method) 
 {
 	{
@@ -2902,7 +2962,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Section__ctor_m5F732533E4DFC0167D965E5F5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 79720
+// Method Definition Index: 79721
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC90C99D73A3E UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2936,7 +2996,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC
 		return L_6;
 	}
 }
-// Method Definition Index: 79721
+// Method Definition Index: 79722
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tC95F24D0C6E6B77389433852BB389F39C692926E* __this, const RuntimeMethod* method) 
 {
 	{
