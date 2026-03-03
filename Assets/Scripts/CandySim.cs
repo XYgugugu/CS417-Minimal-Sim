@@ -32,6 +32,8 @@ public class CandySim : MonoBehaviour
     public float unlockCost = 50;
     public float multiplier = 1.0f;
 
+	public GameObject trophy1, trophy2, trophy3;
+
 	void Start() {
         if (popClickButton != null) popClickButton.gameObject.SetActive(false);
     }
@@ -59,6 +61,10 @@ public class CandySim : MonoBehaviour
             float fillAmount = Mathf.Clamp(beans / 100f, 0.1f, 2.0f);
             beanJarVisual.localScale = new Vector3(1, fillAmount, 1);
         }
+
+		if (beans >= 50) trophy1.SetActive(true);
+		if (beans >= 100) trophy2.SetActive(true);
+		if (beans >= 200) trophy3.SetActive(true);
     }
 
     void UpdateButtonStyle(Button btn, bool canAfford) {

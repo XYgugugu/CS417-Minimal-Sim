@@ -1125,6 +1125,9 @@ struct CandySim_t86FC11B5E602AF74BD5CC276E6323C6F9168F6F0  : public MonoBehaviou
 	float ___powerUpCost;
 	float ___unlockCost;
 	float ___multiplier;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___trophy1;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___trophy2;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___trophy3;
 };
 struct Exchanger_t777A28087F475FEC46E515C18B3B9045E6D07140  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -1680,7 +1683,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_Start_mF046BFE04E61C967C532C57E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:36>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:38>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = __this->___popClickButton;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -1691,7 +1694,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_Start_mF046BFE04E61C967C532C57E
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:36>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:38>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_2 = __this->___popClickButton;
 		NullCheck(L_2);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
@@ -1702,7 +1705,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_Start_mF046BFE04E61C967C532C57E
 
 IL_001f:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:37>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:39>
 		return;
 	}
 }
@@ -1721,20 +1724,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_Update_m73AC186CDFD8433791718F3
 	int32_t V_0 = 0;
 	float V_1 = 0.0f;
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:40>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:42>
 		float L_0 = __this->___beans;
 		float L_1 = __this->___beanRate;
 		float L_2 = __this->___multiplier;
 		float L_3;
 		L_3 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___beans = ((float)il2cpp_codegen_add(L_0, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_1, L_2)), L_3))));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:41>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:43>
 		float L_4 = __this->___pops;
 		float L_5 = __this->___popRate;
 		float L_6;
 		L_6 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
 		__this->___pops = ((float)il2cpp_codegen_add(L_4, ((float)il2cpp_codegen_multiply(L_5, L_6))));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:43>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:45>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_7 = __this->___beanText;
 		float L_8 = __this->___beans;
 		int32_t L_9;
@@ -1746,7 +1749,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_Update_m73AC186CDFD8433791718F3
 		L_11 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralF4768B9973E0CA03771A4B02B0174BB3C0AE7082, L_10, NULL);
 		NullCheck(L_7);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_7, L_11);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:45>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:47>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___lollipopStation;
 		NullCheck(L_12);
 		bool L_13;
@@ -1757,7 +1760,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_Update_m73AC186CDFD8433791718F3
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:46>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:48>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_14 = __this->___popText;
 		float L_15 = __this->___pops;
 		int32_t L_16;
@@ -1774,7 +1777,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_Update_m73AC186CDFD8433791718F3
 
 IL_0098:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:48>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:50>
 		TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* L_19 = __this->___popText;
 		NullCheck(L_19);
 		VirtualActionInvoker1< String_t* >::Invoke(66, L_19, _stringLiteralF475C40B66CDDEC9B385F4B9DDBBD87798470EA5);
@@ -1782,17 +1785,17 @@ IL_0098:
 
 IL_00a8:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:51>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:53>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_20 = __this->___buyGenButton;
 		float L_21 = __this->___beans;
 		float L_22 = __this->___generatorCost;
 		CandySim_UpdateButtonStyle_m753660AC8D1D79FA6C131C3C2B9C79793D1E6E21(__this, L_20, (bool)((((int32_t)((!(((float)L_21) >= ((float)L_22)))? 1 : 0)) == ((int32_t)0))? 1 : 0), NULL);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:52>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:54>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_23 = __this->___buyPowerUpButton;
 		float L_24 = __this->___beans;
 		float L_25 = __this->___powerUpCost;
 		CandySim_UpdateButtonStyle_m753660AC8D1D79FA6C131C3C2B9C79793D1E6E21(__this, L_23, (bool)((((int32_t)((!(((float)L_24) >= ((float)L_25)))? 1 : 0)) == ((int32_t)0))? 1 : 0), NULL);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:54>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:56>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_26 = __this->___unlockButton;
 		NullCheck(L_26);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27;
@@ -1806,7 +1809,7 @@ IL_00a8:
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:55>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:57>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_29 = __this->___unlockButton;
 		float L_30 = __this->___beans;
 		float L_31 = __this->___unlockCost;
@@ -1815,7 +1818,7 @@ IL_00a8:
 
 IL_0111:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:58>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:60>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_32 = __this->___beanJarVisual;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_33;
@@ -1826,12 +1829,12 @@ IL_0111:
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:59>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:61>
 		float L_34 = __this->___beans;
 		float L_35;
 		L_35 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)(L_34/(100.0f))), (0.100000001f), (2.0f), NULL);
 		V_1 = L_35;
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:60>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:62>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_36 = __this->___beanJarVisual;
 		float L_37 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
@@ -1843,7 +1846,55 @@ IL_0111:
 
 IL_0156:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:62>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:65>
+		float L_39 = __this->___beans;
+		if ((!(((float)L_39) >= ((float)(50.0f)))))
+		{
+			goto IL_016f;
+		}
+	}
+	{
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:65>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_40 = __this->___trophy1;
+		NullCheck(L_40);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_40, (bool)1, NULL);
+	}
+
+IL_016f:
+	{
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:66>
+		float L_41 = __this->___beans;
+		if ((!(((float)L_41) >= ((float)(100.0f)))))
+		{
+			goto IL_0188;
+		}
+	}
+	{
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:66>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_42 = __this->___trophy2;
+		NullCheck(L_42);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_42, (bool)1, NULL);
+	}
+
+IL_0188:
+	{
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:67>
+		float L_43 = __this->___beans;
+		if ((!(((float)L_43) >= ((float)(200.0f)))))
+		{
+			goto IL_01a1;
+		}
+	}
+	{
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:67>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_44 = __this->___trophy3;
+		NullCheck(L_44);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_44, (bool)1, NULL);
+	}
+
+IL_01a1:
+	{
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:68>
 		return;
 	}
 }
@@ -1862,7 +1913,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_UpdateButtonStyle_m753660AC8D1D
 	memset((&G_B4_0), 0, sizeof(G_B4_0));
 	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* G_B4_1 = NULL;
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:65>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:71>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = ___0_btn;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_1;
@@ -1873,7 +1924,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_UpdateButtonStyle_m753660AC8D1D
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:66>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:72>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_2 = ___0_btn;
 		NullCheck(L_2);
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_3;
@@ -1910,7 +1961,7 @@ IL_001e:
 
 IL_0023:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:68>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:74>
 		return;
 	}
 }
@@ -1929,7 +1980,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_BuyGenerator_mAB76C193FC950913D
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:71>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:77>
 		float L_0 = __this->___beans;
 		float L_1 = __this->___generatorCost;
 		if ((!(((float)L_0) >= ((float)L_1))))
@@ -1938,14 +1989,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_BuyGenerator_mAB76C193FC950913D
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:72>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:78>
 		float L_2 = __this->___beans;
 		float L_3 = __this->___generatorCost;
 		__this->___beans = ((float)il2cpp_codegen_subtract(L_2, L_3));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:73>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:79>
 		float L_4 = __this->___beanRate;
 		__this->___beanRate = ((float)il2cpp_codegen_add(L_4, (2.0f)));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:75>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:81>
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5 = __this->___spawnArea;
 		NullCheck(L_5);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
@@ -1960,7 +2011,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_BuyGenerator_mAB76C193FC950913D
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
 		L_10 = Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline(L_6, L_9, NULL);
 		V_0 = L_10;
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:76>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:82>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = __this->___pressPrefab;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_13;
@@ -1968,17 +2019,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_BuyGenerator_mAB76C193FC950913D
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14;
 		L_14 = Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4(L_11, L_12, L_13, Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:78>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:84>
 		float L_15 = __this->___generatorCost;
 		__this->___generatorCost = ((float)il2cpp_codegen_multiply(L_15, (1.5f)));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:79>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:85>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral02FE0A3A19CBE5807910E9E65292468E7B5A2E19, NULL);
 	}
 
 IL_009d:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:81>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:87>
 		return;
 	}
 }
@@ -1993,7 +2044,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_BuyPowerUp_m1D387A5928108EE1183
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:84>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:90>
 		float L_0 = __this->___beans;
 		float L_1 = __this->___powerUpCost;
 		if ((!(((float)L_0) >= ((float)L_1))))
@@ -2002,21 +2053,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_BuyPowerUp_m1D387A5928108EE1183
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:85>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:91>
 		float L_2 = __this->___beans;
 		float L_3 = __this->___powerUpCost;
 		__this->___beans = ((float)il2cpp_codegen_subtract(L_2, L_3));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:86>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:92>
 		float L_4 = __this->___multiplier;
 		__this->___multiplier = ((float)il2cpp_codegen_multiply(L_4, (1.5f)));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:87>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:93>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral15011946D828CA594E1EDEC2A9E8D59FA3DE3010, NULL);
 	}
 
 IL_003d:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:89>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:95>
 		return;
 	}
 }
@@ -2032,7 +2083,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_UnlockLollipops_m0ED97EBF52DF8F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:92>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:98>
 		float L_0 = __this->___beans;
 		float L_1 = __this->___unlockCost;
 		if ((!(((float)L_0) >= ((float)L_1))))
@@ -2041,17 +2092,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_UnlockLollipops_m0ED97EBF52DF8F
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:93>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:99>
 		float L_2 = __this->___beans;
 		float L_3 = __this->___unlockCost;
 		__this->___beans = ((float)il2cpp_codegen_subtract(L_2, L_3));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:94>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:100>
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___lollipopStation;
 		NullCheck(L_4);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)1, NULL);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:95>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:101>
 		__this->___popRate = (0.5f);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:97>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:103>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_5 = __this->___popClickButton;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_6;
@@ -2062,7 +2113,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_UnlockLollipops_m0ED97EBF52DF8F
 		}
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:97>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:103>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_7 = __this->___popClickButton;
 		NullCheck(L_7);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8;
@@ -2073,21 +2124,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_UnlockLollipops_m0ED97EBF52DF8F
 
 IL_0057:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:99>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:105>
 		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_9 = __this->___unlockButton;
 		NullCheck(L_9);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10;
 		L_10 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_9, NULL);
 		NullCheck(L_10);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)0, NULL);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:100>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:106>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral30E75FC32291C6198383F852841C9D3ED39143B1, NULL);
 	}
 
 IL_0072:
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:102>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:108>
 		return;
 	}
 }
@@ -2102,13 +2153,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CandySim_ClickLollipop_m1772A56993E0202A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:105>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:111>
 		float L_0 = __this->___pops;
-		__this->___pops = ((float)il2cpp_codegen_add(L_0, (5.0f)));
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:106>
+		__this->___pops = ((float)il2cpp_codegen_add(L_0, (3.0f)));
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:112>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralAC54987B3AE4E739F983AFC477922E0E694592D0, NULL);
-		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:107>
+		//<source_info:C:/Users/priti/CS417-Minimal-Sim/Assets/Scripts/CandySim.cs:113>
 		return;
 	}
 }
