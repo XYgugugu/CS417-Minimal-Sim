@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3931682300450416013}
   m_Layer: 0
   m_Name: Press
-  m_TagString: Untagged
+  m_TagString: Generator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
