@@ -10,7 +10,6 @@ public class CandySim : MonoBehaviour
     public float beans = 0;
     public float beanRate = 1.0f;
     public TextMeshProUGUI beanText;
-    public Transform beanJarVisual;
 
     [Header("Resource: Lollipops")]
     public float pops = 0;
@@ -28,6 +27,7 @@ public class CandySim : MonoBehaviour
     public Button buyPowerUpButton;
     public Button unlockButton;
     public Button prestigeButton;
+    public Button resetButton;
 
     [Header("Costs")]
     public float generatorCost = 10;
@@ -62,10 +62,10 @@ public class CandySim : MonoBehaviour
         pops += popRate * Time.deltaTime;
         currTime += Time.deltaTime;
 
-        beanText.text = "JellyBeans: " + Mathf.FloorToInt(beans);
+        beanText.text = "Beer Boxes: " + Mathf.FloorToInt(beans);
 
         if (lollipopStation.activeSelf) {
-            popText.text = "Lollipops: " + Mathf.FloorToInt(pops);
+            popText.text = "Beers: " + Mathf.FloorToInt(pops);
         } else {
             popText.text = "???";
         }
@@ -89,11 +89,6 @@ public class CandySim : MonoBehaviour
 
         if (unlockButton.gameObject.activeSelf) {
             UpdateButtonStyle(unlockButton, beans >= unlockCost);
-        }
-
-        if (beanJarVisual != null) {
-            float fillAmount = Mathf.Clamp(beans / 100f, 0.1f, 2.0f);
-            beanJarVisual.localScale = new Vector3(1, fillAmount, 1);
         }
 
 		if (beans >= 50) trophy1.SetActive(true);
@@ -158,6 +153,34 @@ public class CandySim : MonoBehaviour
 	public void ClickLollipop() {
 		pops += 3;
 		Debug.Log("Manual Lollipop Created!");
+	}
+
+    public void ResetGame() {
+		PlayerPrefs.DeleteAll();
+        beans = 0;
+        pops = 0;
+        beanRate = 1.0f;
+        popRate = 0;
+        multiplier = 1.0f;
+        generatorCost = 10;
+        unlockCost = 50;
+        prestigeLevel = 0;
+        prestigeBonus = 1f; 
+
+        foreach (GameObject gen in GameObject.FindGameObjectsWithTag("Generator")) {
+            Destroy(gen);
+        }
+
+        lollipopStation.SetActive(false);
+        if (unlockButton != null) {
+            unlockButton.gameObject.SetActive(true);
+        }
+
+        trophy1.SetActive(false);
+        trophy2.SetActive(false);
+        trophy3.SetActive(false);
+
+		Debug.Log("All PlayerPrefs have been cleared.");
 	}
 
     public void SaveGame() {
