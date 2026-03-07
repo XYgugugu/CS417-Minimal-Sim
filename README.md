@@ -5,5 +5,5 @@ This project implements a Korean bar–themed incremental idle simulation set in
 
 ## Contributors
 1. Encheng Xie
-2. Colin Ward
+2. Colin Li
 3. Pritika Aggarwal
